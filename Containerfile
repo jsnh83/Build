@@ -1,6 +1,6 @@
 FROM registry.access.redhat.com/ubi8/ubi:8.0
 LABEL version=”1.0”
-LABELdescription=”this is Containerfile”
+LABEL description=”this is Containerfile”
 
 MAINTAINER Red Hat Training <training@redhat.com>
 
