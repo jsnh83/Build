@@ -1,4 +1,6 @@
 FROM registry.access.redhat.com/ubi8/ubi:8.0
+LABEL version=”1.0”
+LABELdescription=”this is Containerfile”
 
 MAINTAINER Red Hat Training <training@redhat.com>
 
@@ -20,7 +22,7 @@ EXPOSE 80
 RUN rm -rf /run/httpd && mkdir /run/httpd
 
 # Run as the root user
-USER apache
+USER root
 
 # Launch httpd
 CMD /usr/sbin/httpd -DFOREGROUND
