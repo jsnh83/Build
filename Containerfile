@@ -13,6 +13,8 @@ RUN yum clean all --disableplugin=subscription-manager -y
 
 RUN echo "Hello from the httpd-parent container!" > ${DOCROOT}/index.html
 
+ADD file1.txt /var
+ADD file2.txt /var
 # Allows child images to inject their own content into DocumentRoot
 
 EXPOSE 80
